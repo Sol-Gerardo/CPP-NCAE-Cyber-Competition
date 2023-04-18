@@ -1,0 +1,17 @@
+- Creating a new tmux session:
+	- tmux new -s Session
+- To view all running sessions:
+	- tmux ls 
+- To exit session without closing it:
+	- tmux detach
+- To enter existing session:
+	- tmux attach -t Session
+- To view all session:
+	- C-b + s
+		- Where C is control
+- Splitting pane in half
+	- C-b + %
+- Splitting pane horizontally:
+	- C-b + "
+- If multiple panes are open to move between them
+	- C-b + arrow_key 
