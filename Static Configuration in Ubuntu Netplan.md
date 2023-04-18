@@ -7,7 +7,15 @@
 	- sudo nano /etc/netplan/01-network-manager-all.yaml
 
 - Our network configuration will look like this:
-	- ![[Screenshot 2023-03-23 at 7.27.46 PM.png]]
+    ```bash
+        # Let NetworkManager manage all devices on this system
+        network:
+        version: 2
+        renderer: NetworkManager
+        ethernets 
+          ens18:
+            addresses:
+              - 192.168.202.2/24
 
 - To apply network configurations enter:
 	- sudo netplan apply
