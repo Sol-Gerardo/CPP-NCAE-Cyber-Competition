@@ -15,4 +15,7 @@
 
 - ifconfig command does not show temporary addresses, while on the other hand ip a or ip addr does show additional IP addresses
 
+- To restart the Ubuntu network enter:
+    - sudo service network-manager restart 
+
 [[Using Networking Service with Netcat]]
